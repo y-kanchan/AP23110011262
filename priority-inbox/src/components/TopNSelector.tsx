@@ -7,7 +7,7 @@ import { useNotifications } from "../context/NotificationContext";
 const OPTIONS = [5, 10, 15, 20];
 
 export function TopNSelector() {
-  const { state, setPriorityLimit } = useNotifications();
+  const { state, setTopN } = useNotifications();
 
   return (
     <div className="topn-selector">
@@ -16,14 +16,14 @@ export function TopNSelector() {
         <span>Show top</span>
       </div>
       <div className="topn-buttons">
-        {OPTIONS.map((optionValue) => (
+        {OPTIONS.map((n) => (
           <button
-            key={optionValue}
-            className={`topn-btn ${state.priorityLimit === optionValue ? "active" : ""}`}
-            onClick={() => setPriorityLimit(optionValue)}
-            aria-pressed={state.priorityLimit === optionValue}
+            key={n}
+            className={`topn-btn ${state.topNCount === n ? "active" : ""}`}
+            onClick={() => setTopN(n)}
+            aria-pressed={state.topNCount === n}
           >
-            {optionValue}
+            {n}
           </button>
         ))}
       </div>
