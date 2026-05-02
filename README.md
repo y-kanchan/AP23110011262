@@ -1,8 +1,10 @@
-# Campus Backend Platform - Priority Inbox
+# Frontend Track Submission - Priority Inbox
 
-This repository contains the full submission for the Campus Backend Platform track, featuring a Priority Inbox system with intelligent notification ranking, a vehicle maintenance optimization microservice, and a reusable logging utility.
+This repository contains the **Frontend Track** submission for the Campus Platform. The core of this project is the **Priority Inbox**, an intelligent notification dashboard designed to help students manage campus alerts efficiently.
 
-## Project Structure
+## Project Overview
+
+The submission focuses on a premium user interface and a sophisticated **Priority Engine** that ensures critical notifications (like career placements and results) are always at the top.
 
 ```
 .
